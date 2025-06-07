@@ -1,5 +1,5 @@
 {
-    "cron_class": "West\\ForumStatsStick\\Cron\\StickedItem",
+    "cron_class": "XFSkins\\ForumStatsStick\\Cron\\StickedItem",
     "cron_method": "disableExpiredStickedItems",
     "run_rules": {
         "day_type": "dom",

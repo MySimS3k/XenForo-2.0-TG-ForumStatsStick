@@ -1,6 +1,6 @@
 <?php
 	
-namespace West\ForumStatsStick;
+namespace XFSkins\ForumStatsStick;
 
 class Listener 
 {
@@ -13,7 +13,7 @@ class Listener
 			case 'af_forumstats_hottest_threads':
 			case 'af_forumstats_latest_forum_news':
 			case 'af_forumstats_most_viewed_threads':
-                $stickedItemFinder = \XF::finder('West\ForumStatsStick:StickedItem');
+                $stickedItemFinder = \XF::finder('XFSkins\ForumStatsStick:StickedItem');
                 $stickedItems = $stickedItemFinder->where('active', 1)->order('display_order')->fetch();
             
 				$params = array_merge($params, 

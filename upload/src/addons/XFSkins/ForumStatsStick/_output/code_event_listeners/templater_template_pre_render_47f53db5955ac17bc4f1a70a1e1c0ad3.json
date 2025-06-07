@@ -1,7 +1,7 @@
 {
     "event_id": "templater_template_pre_render",
     "execute_order": 10,
-    "callback_class": "West\\ForumStatsStick\\Listener",
+    "callback_class": "XFSkins\\ForumStatsStick\\Listener",
     "callback_method": "templaterTemplatePreRender",
     "active": true,
     "hint": "",

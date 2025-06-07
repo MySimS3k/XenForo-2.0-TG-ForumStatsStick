@@ -1,6 +1,6 @@
 <?php
 
-namespace West\ForumStatsStick\Entity;
+namespace XFSkins\ForumStatsStick\Entity;
 
 use XF\Mvc\Entity\Entity;
 use XF\Mvc\Entity\Structure;
@@ -8,7 +8,7 @@ use XF\Mvc\Entity\Structure;
 class StickedItem extends Entity {
 	public static function getStructure(Structure $structure) {
 		$structure->table = "xf_fss_sticked_items";
-		$structure->shortName = "West\ForumStatsStick:StickedItem";
+		$structure->shortName = "XFSkins\ForumStatsStick:StickedItem";
 		$structure->primaryKey = "sticked_item_id";
 		$structure->columns = [
 			'sticked_item_id' => ['type' => self::UINT, 'autoIncrement' => true],

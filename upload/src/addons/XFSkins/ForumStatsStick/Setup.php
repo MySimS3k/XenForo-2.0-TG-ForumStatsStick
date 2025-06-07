@@ -1,6 +1,6 @@
 <?php
 
-namespace West\ForumStatsStick;
+namespace XFSkins\ForumStatsStick;
 
 use XF\AddOn\AbstractSetup;
 use XF\AddOn\StepRunnerInstallTrait;
