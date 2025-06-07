@@ -1,15 +1,15 @@
 {
     "legacy_addon_id": "",
-    "title": "[W] Stick Thread in AF Forum Stats",
+    "title": "[XFSkins] Stick Thread in AF Forum Stats",
     "description": "Sticking items in forum stats by AddonFlare",
-    "version_id": 2010070,
-    "version_string": "2.1.0",
-    "dev": "West",
+    "version_id": 2030670,
+    "version_string": "2.3.6",
+    "dev": "XFSkins",
     "dev_url": "",
     "faq_url": "",
     "support_url": "",
     "extra_urls": {
-        "GitHub": "https://github.com/West14/ForumStatsStick"
+        "GitHub": "https://github.com/XFSkins/ForumStatsStick"
     },
     "require": {
         "AddonFlare/ForumStats": [

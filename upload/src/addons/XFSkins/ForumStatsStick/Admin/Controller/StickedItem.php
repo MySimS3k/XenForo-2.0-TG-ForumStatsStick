@@ -1,13 +1,13 @@
 <?php
 
-namespace West\ForumStatsStick\Admin\Controller;
+namespace XFSkins\ForumStatsStick\Admin\Controller;
 
 use XF\Mvc\ParameterBag;
 
 class StickedItem extends \XF\Admin\Controller\AbstractController {
 	public function actionIndex(ParameterBag $params) {
 		$page = $this->filterPage();
-		$stickedItemFinder = \XF::finder('West\ForumStatsStick:StickedItem');
+		$stickedItemFinder = \XF::finder('XFSkins\ForumStatsStick:StickedItem');
 		$total = $stickedItemFinder->total();
 		$perPage = 300;
 		$this->assertValidPage($page, $perPage, $total, 'forum-stats-stick');
@@ -22,7 +22,7 @@ class StickedItem extends \XF\Admin\Controller\AbstractController {
 	}
 
 	public function actionAdd() {
-		$stickedItem = $this->em()->create('West\ForumStatsStick:StickedItem');
+		$stickedItem = $this->em()->create('XFSkins\ForumStatsStick:StickedItem');
 		return $this->stickedItemAddEdit($stickedItem);
 	}
 
@@ -35,7 +35,7 @@ class StickedItem extends \XF\Admin\Controller\AbstractController {
 	{ 
 		/** @var \XF\ControllerPlugin\Toggle $plugin */ 
 		$plugin = $this->plugin('XF:Toggle'); 
-		return $plugin->actionToggle('West\ForumStatsStick:StickedItem'); 
+		return $plugin->actionToggle('XFSkins\ForumStatsStick:StickedItem'); 
 	}
 
 	public function actionDelete(ParameterBag $params) {
@@ -59,7 +59,7 @@ class StickedItem extends \XF\Admin\Controller\AbstractController {
 		}
 	}
 
-	protected function stickedItemAddEdit(\West\ForumStatsStick\Entity\StickedItem $stickedItem) {
+	protected function stickedItemAddEdit(\XFSkins\ForumStatsStick\Entity\StickedItem $stickedItem) {
 		$viewParams = [
 			'stickedItem' => $stickedItem
 		];
@@ -67,10 +67,10 @@ class StickedItem extends \XF\Admin\Controller\AbstractController {
 	}
 
 	protected function assertStickedItemExists($id, $with = null, $phraseKey = null){
-		return $this->assertRecordExists('West\ForumStatsStick:StickedItem', $id, $with, $phraseKey);
+		return $this->assertRecordExists('XFSkins\ForumStatsStick:StickedItem', $id, $with, $phraseKey);
 	}
 
-	protected function stickedItemSaveProcess(\West\ForumStatsStick\Entity\StickedItem $stickedItem) {
+	protected function stickedItemSaveProcess(\XFSkins\ForumStatsStick\Entity\StickedItem $stickedItem) {
 		$form = $this->formAction();
 		$input = $this->filter([
 			'name' => 'str',
@@ -90,7 +90,7 @@ class StickedItem extends \XF\Admin\Controller\AbstractController {
 			$stickedItem = $this->assertStickedItemExists($params->sticked_item_id);
 		}
 		else {
-			$stickedItem = $this->em()->create('West\ForumStatsStick:StickedItem');
+			$stickedItem = $this->em()->create('XFSkins\ForumStatsStick:StickedItem');
 		}
 		$this->stickedItemSaveProcess($stickedItem)->run();
 		if ($this->request->exists('exit')) {
