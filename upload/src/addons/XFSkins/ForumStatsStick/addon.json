@@ -1,7 +1,7 @@
 {
     "legacy_addon_id": "",
-    "title": "[XFSkins] Stick Thread in AF Forum Stats",
-    "description": "Sticking items in forum stats by AddonFlare",
+    "title": "[XFSkins] Forum Stats Stick",
+    "description": "Sticky item manager for XenForo forum statistics by XFSkins",
     "version_id": 2030970,
     "version_string": "2.3.9",
     "dev": "XFSkins",

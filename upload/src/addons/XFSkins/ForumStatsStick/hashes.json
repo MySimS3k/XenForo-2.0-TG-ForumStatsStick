@@ -61,5 +61,6 @@
     "src/addons/XFSkins/ForumStatsStick/_output/templates/admin/w_fss_list.html": "4c5bc21f9bdf9665969b7c918be7baed723dffd7be56b79042a8a7f7a6b392ad",
     "src/addons/XFSkins/ForumStatsStick/_output/templates/admin/w_fss_sticked_item_delete.html": "7a3fd5119b5e1e9c1e1a657c68640db6b28c5bffe222ebfd07be580ffbca0988",
     "src/addons/XFSkins/ForumStatsStick/_output/templates/public/w_fss_sticked_items_macros.html": "ad8528744d28f042ec6f5a60941d935073ee71d639256c97a6fa502bd6fdbffb",
-    "src/addons/XFSkins/ForumStatsStick/addon.json": "461f3acb12d7485f329edd31bea0186299797028440d538b9524399084fe1416",
+    "src/addons/XFSkins/ForumStatsStick/addon.json": "2a6c1e19a069a310ff3ff47c82327389e44afa5cda018f6043899ea60297ddc6"
 }
+
